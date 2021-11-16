@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cutive+Mono'>
+   
+   
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+
+</head>
+<body>
+    
+
+    
+               <div class="weather-app">
+                   <div class="container">
+        
+                                <!-- Navigation -->
+                                <!-- <header class="offcanvas-menu">
+                                    <input type="checkbox" id="toogle-menu" />
+                                
+                                    <label for="toogle-menu" class="toogle-open"><span></span></label>
+                                
+                                    <nav>
+                                        <div>
+                                      
+                                            <label for="toogle-menu" class="toogle-close">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                        
+                                    </nav>
+                                </header>
+                                 -->
+                              
+                                  
+                                
+                    
+    
+                       <div class="information">
+                           <h1 class="temp">16&#176;</h1>
+                       
+                       <div class="city-time">
+                           <h1 class="name">Kiev</h1>
+                           <small>
+                               <span class="time">06:09</span>
+                               -
+                               <span class="date" id="date">
+                                   Monday Sep 19
+                               </span>
+                           </small>
+                       </div>
+                       <div class="weather">
+                           <img src="./icons/64x64/day/113.png" class="icon" alt="icon" width="50" height="50">
+                           <span class="condition">Cloudy</span>
+                       </div>
+
+
+                       <div class="button" id="current-weather-items"></div>
+
+
+                      
+                    
+                       <div class="container">
+                       <div class="hour">
+                        <div class="weather-hour" id="weather-hour" style="margin-left: 10px;">
+                            <div id="0">
+                            <div class="weather-hour-item" id="weather-hour-item">
+                            <div class="time" id="time0">Tue</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="weather icon" class="w-icon" id="icon0">
+                            <div class="temp" id="temp0">Night 25.6&#176; C</div>
+                         
+                        </div>
+                    </div>
+                    <div id="1">
+                        <div class="weather-hour-item">
+                            <div class="time1" id="time1">Wed</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="weather icon" class="w-icon"id="icon1">
+                            <div class="temp" id="temp1">Night 25.6&#176; C</div>
+                        </div>
+                        </div>
+                        <div id="2">
+                     <div class="weather-hour-item">
+                            <div class="time2" id="time2">Thu</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="weather icon" class="w-icon" id="icon2">
+                            <div class="temp" id="temp2">Night 25.6&#176; C</div>
+                        </div>
+                        </div>
+                        <div id="3">
+                     <div class="weather-hour-item">
+                            <div class="time3" id="time3">Fri</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="weather icon" class="w-icon" id="icon3">
+                            <div class="temp"id="temp3">Night 25.6&#176; C</div>
+                        </div>
+                        </div>
+                        <div id="4">
+                     <div class="weather-hour-item">
+                            <div class="time4"id="time4">Sun</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="weather icon" class="w-icon"id="icon4">
+                            <div class="temp"id="temp4">Night 25.6&#176; C</div>
+                        </div>
+                        </div>
+                        <div id="5">
+                     <div class="weather-hour-item">
+                            <div class="time5"id="time5">Sat</div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="weather icon" class="w-icon" id="icon5">
+                            <div class="temp" id="temp5">Night 25.6&#176; C</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+                    <div class="container">
+                        <div class="future-forecast">
+                            <div class="today" id="current-temp">
+                                <img src="http://openweathermap.org/img/wn/10d@4x.png" 
+                                alt="weather icon" class="w-icon">
+                                <div class="other">
+                                <div class="day">Monday</div>
+                                <div class="temp">Night 25.6&#176; C</div>
+                                <div class="temp">Day 35.6&#176; C</div>
+                                <div class="temp">Clouds</div>
+                            </div>
+                            </div>
+                            <div class="weather-forecast" id="weather-forecast" style="margin-left: 10px;">
+                                <div class="weather-forecast-item">
+                                    <div class="day">Tue</div>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                                    <div class="temp">Night 25.6&#176; C</div>
+                                    <div class="temp">Day 35.6&#176; C</div>
+                                    <div class="temp">Clouds</div>
+                                </div>
+                                <div class="weather-forecast-item">
+                                    <div class="day">Wed</div>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                                    <div class="temp">Night 25.6&#176; C</div>
+                                    <div class="temp">Day 35.6&#176; C</div>
+                                    <div class="temp">Clouds</div>
+                                </div>
+                           
+                             <div class="weather-forecast-item">
+                                    <div class="day">Thu</div>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                                    <div class="temp">Night 25.6&#176; C</div>
+                                    <div class="temp">Day 35.6&#176; C</div>
+                                    <div class="temp">Clouds</div>
+                                </div>
+                         
+                             <div class="weather-forecast-item">
+                                    <div class="day">Fri</div>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                                    <div class="temp">Night 25.6&#176; C</div>
+                                    <div class="temp">Day 35.6&#176; C</div>
+                                    <div class="temp">Clouds</div>
+                                </div>
+                          
+                             <div class="weather-forecast-item">
+                                    <div class="day">Sun</div>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                                    <div class="temp">Night 25.6&#176; C</div>
+                                    <div class="temp">Day 35.6&#176; C</div>
+                                    <div class="temp">Clouds</div>
+                                </div>
+                           
+                             <div class="weather-forecast-item">
+                                    <div class="day">Sat</div>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                                    <div class="temp">Night 25.6&#176; C</div>
+                                    <div class="temp">Day 35.6&#176; C</div>
+                                    <div class="temp">Clouds</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+
+                    </div>
+                   </div>
+                 
+             
+                 
+            <div class="panel">
+                <form id="locationInput">
+                    <input type="text" class="search" placeholder="Search location...">
+                    <button type="submit" class="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <ul class="cities">
+                    <li class="city">Kiev</li>
+                    <li class="city">New York</li>
+                    <li class="city">Paris</li>
+                    <li class="city">Tokyo</li>
+                </ul>
+      
+            </div>
+           
+        
+    </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script src="./script.js"></script>
+    <script>
+   
+
+
+
+
+    </script>
+  
+
+</body>
+</html>
